@@ -14,6 +14,32 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      background: hsl(0, 0%, 98%);
+      font-size: 15px;
+    }
+
+    h2,
+    h3 {
+      font-size: 36px;
+      text-align: center;
+      color: hsl(234, 12%, 34%);
+    }
+
+    h2 {
+      font-weight: 100;
+      margin-top: 70px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    header p {
+      text-align: center;
+      color: hsl(229, 6%, 66%);
+      margin-bottom: 100px;
     }
 
     .attribution {
@@ -25,11 +51,50 @@
       color: hsl(228, 45%, 44%);
     }
 
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: auto;
+    }
+
     .card {
       /* Add shadows to creates the "card" effect */
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
       border-radius: 5px;
+    }
+
+    #supervisor {
+      border-top: 5px solid hsl(180, 62%, 55%);
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    #team-builder {
+      border-top: 5px solid hsl(0, 78%, 62%);
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    #karma {
+      border-top: 5px solid hsl(34, 97%, 64%);
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    #calculator {
+      border-top: 5px solid hsl(212, 86%, 64%);
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .card h4 {
+      color: hsl(234, 12%, 34%);
+      font-size: 18px;
+    }
+
+    .card p {
+      color: hsl(229, 6%, 66%)
     }
 
     .container {
@@ -42,47 +107,56 @@
 <body>
   <header>
 
-    <h3>Reliable, efficient delivery </h3>
+    <h2>Reliable, efficient delivery </h2>
     <h3>Powered by Technology</h3>
 
-    <p>Our Artificial Intelligence powered tools use millions of project data points
-      to ensure that your project is successful</p>
+    <p>Our Artificial Intelligence powered tools use millions of project data <br>
+      points to ensure that your project is
+      successful</p>
 
 
   </header>
 
-  <div class="card">
-    <div class="container">
-      <h4>Supervisor</h4>
-      <p>Monitors activity to identify project roadblocks</p>
-      <img src="images/icon-supervisor.svg" alt="icon supervisor">
-
+  <div class="cards">
+    <div id="supervisor">
+      <div class="card">
+        <div class="container">
+          <h4>Supervisor</h4>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img src="images/icon-supervisor.svg" alt="icon supervisor">
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="container">
-      <h4>Team Builder</h4>
-      <p>Scans our talent network to create the optimal team for your project</p>
-      <img src="images/icon-team-builder.svg" alt="icon team builder">
+
+    <div id="team-builder">
+      <div class="card">
+        <div class="container">
+          <h4>Team Builder</h4>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <img src="images/icon-team-builder.svg" alt="icon team builder">
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="container">
-      <h4>Karma</h4>
-      <p>Regularly evaluates our talent to ensure quality</p>
-      <img src="images/icon-karma.svg" alt="icon karma">
-
+    <div id="karma">
+      <div class="card">
+        <div class="container">
+          <h4>Karma</h4>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src="images/icon-karma.svg" alt="icon karma">
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="container">
-      <h4>Calculator</h4>
-      <p>Uses data from past projects to provide better delivery estimates</p>
-      <img src="images/icon-calculator.svg" alt="icon calculator">
-
+    <div id="calculator">
+      <div class="card">
+        <div class="container">
+          <h4>Calculator</h4>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <img src="images/icon-calculator.svg" alt="icon calculator">
+        </div>
+      </div>
     </div>
   </div>
 

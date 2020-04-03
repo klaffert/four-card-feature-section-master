@@ -1,0 +1,204 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  background: hsl(0, 0%, 98%);
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+}
+
+body {
+  padding-top: 50px;
+}
+@media (max-width: 1050px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 38px;
+}
+@media (max-width: 690px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.header-section {
+  text-align: center;
+  padding: 20px 0;
+}
+@media (max-width: 690px) {
+  .header-section {
+    width: 100%;
+  }
+}
+.header-section .text {
+  padding-top: 20px;
+  color: #a3a5ae;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cards {
+  padding-top: 40px;
+  max-width: 1125px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [col-gap] 30px [col-start] 335px [col-gap] 30px [col-start] 335px [col-gap] 30px [col-start] 335px [col-gap] 30px;
+  grid-template-rows: [row-start] 110px [row-gap] 30px [row-start] 110px [row-gap] 30px [row-start] 110px [row-gap] 30px [row-start] 110px [row-gap] 30px;
+}
+@media (max-width: 1050px) {
+  .cards {
+    max-width: 700px;
+    grid-template-columns: [col-start] 335px [col-gap] 30px [col-start] 335px [col-gap];
+    grid-template-rows: [row-start] 220px [row-gap] 30px [row-start] 220px [row-gap];
+  }
+}
+@media (max-width: 690px) {
+  .cards {
+    max-width: 335px;
+    grid-template-columns: 335px;
+    grid-template-rows: [row-line] 220px [row-line] 220px [row-line] 220px [row-line] 220px;
+    grid-row-gap: 20px;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 1px 8px 20px 1px rgba(0, 0, 120, 0.12);
+  padding: 30px 25px;
+  position: relative;
+}
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.card span {
+  display: block;
+  width: 270px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #a3a5ae;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  padding: 30px 25px;
+  right: 0;
+  bottom: 0;
+}
+
+#top-card {
+  border-top: 4px solid #ea5353;
+  grid-column-start: col-start 2;
+  grid-column-end: col-gap 3;
+  grid-row-start: row-start;
+  grid-row-end: row-gap 2;
+}
+@media (max-width: 1050px) {
+  #top-card {
+    grid-row-start: row-start 1;
+    grid-row-end: row-gap 1;
+    grid-column-start: col-start 2;
+    grid-column-end: col-gap 2;
+  }
+}
+@media (max-width: 690px) {
+  #top-card {
+    grid-row-start: row-line 2;
+    grid-row-end: row-line 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#bottom-card {
+  border-top: 4px solid #fcaf4a;
+  grid-column-start: col-start 2;
+  grid-column-end: col-gap 3;
+  grid-row-start: row-start 3;
+  grid-row-end: row-gap 4;
+}
+@media (max-width: 1050px) {
+  #bottom-card {
+    grid-row-start: row-start 2;
+    grid-row-end: row-gap 2;
+    grid-column-start: col-start 1;
+    grid-column-end: col-gap 1;
+  }
+}
+@media (max-width: 690px) {
+  #bottom-card {
+    grid-row-start: row-line 3;
+    grid-row-end: row-line 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#left-card {
+  border-top: 4px solid #45d3d3;
+  grid-column-start: col-start;
+  grid-column-end: col-gap 2;
+  grid-row-start: row-start 2;
+  grid-row-end: row-gap 3;
+}
+@media (max-width: 1050px) {
+  #left-card {
+    grid-row-start: row-start 1;
+    grid-row-end: row-gap 1;
+    grid-column-start: col-start 1;
+    grid-column-end: col-gap 1;
+  }
+}
+@media (max-width: 690px) {
+  #left-card {
+    grid-row-start: row-line 1;
+    grid-row-end: row-line 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+#right-card {
+  border-top: 4px solid #549ef2;
+  grid-column-start: col-start 3;
+  grid-column-end: col-gap 4;
+  grid-row-start: row-start 2;
+  grid-row-end: row-gap 3;
+}
+@media (max-width: 1050px) {
+  #right-card {
+    grid-row-start: row-start 2;
+    grid-row-end: row-gap 2;
+    grid-column-start: col-start 2;
+    grid-column-end: col-gap 2;
+  }
+}
+@media (max-width: 690px) {
+  #right-card {
+    grid-row-start: row-line 4;
+    grid-row-end: row-line 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+/* Footer */
+.attribution {
+  text-align: center;
+  font-size: 0.7em;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
